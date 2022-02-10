@@ -1,0 +1,25 @@
+@import "./styles/_variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  color: $white;
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  font: {
+    family: "Fraunces", serif;
+    weight: 900;
+    size: 2.5rem;
+  }
+  margin: 5rem 0;
+  letter-spacing: 0.3rem;
+}

@@ -1,0 +1,12 @@
+@import "../styles/_variables.scss";
+
+.header {
+  background: url("../assets/mobile/image-header.jpg");
+  padding: 2.5rem 1.5rem;
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
