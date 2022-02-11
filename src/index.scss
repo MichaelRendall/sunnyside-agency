@@ -10,7 +10,6 @@ body {
 }
 
 h1 {
-  color: $white;
   text: {
     align: center;
     transform: uppercase;
@@ -20,6 +19,12 @@ h1 {
     weight: 900;
     size: 2.5rem;
   }
-  margin: 5rem 0;
+  color: $white;
+  margin: 5rem 0 3rem;
   letter-spacing: 0.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

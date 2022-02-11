@@ -1,0 +1,19 @@
+@import "../../styles/_variables.scss";
+
+.button {
+  font: {
+    family: "Fraunces", serif;
+    size: 0.9rem;
+    weight: 700;
+  }
+  background-color: $white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  color: black;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgba($white, 0.3);
+    color: $white;
+  }
+}
