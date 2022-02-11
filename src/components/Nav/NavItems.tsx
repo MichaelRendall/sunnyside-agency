@@ -30,6 +30,7 @@ const NavItems = () => {
     <ul className={classes.nav}>
       {NAV_LIST.map((navItem) => (
         <NavItem
+          key={navItem.text}
           text={navItem.text}
           link={navItem.link}
           class={navItem.class}
