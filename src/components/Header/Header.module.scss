@@ -1,8 +1,8 @@
-@import "../styles/_variables.scss";
+@import "../../styles/_variables.scss";
 
 .header {
   background: {
-    image: url("../assets/mobile/image-header.jpg");
+    image: url("../../assets/mobile/image-header.jpg");
     size: cover;
     position: top;
     repeat: no-repeat;
@@ -11,8 +11,9 @@
   text-align: center;
 
   @media (min-width: 40rem) {
-    background-image: url("../assets/desktop/image-header.jpg");
+    background-image: url("../../assets/desktop/image-header.jpg");
     padding: 2.5rem 2.5rem 10rem;
+    height: 100vh;
   }
 
   .header__nav {

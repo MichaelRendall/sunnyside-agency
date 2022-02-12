@@ -1,0 +1,88 @@
+@import "../../styles/_variables.scss";
+
+.mainService {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 40rem) {
+    flex-direction: row-reverse;
+  }
+
+  & > * {
+    flex-basis: 100%;
+  }
+}
+
+.mainService.stand-out {
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
+
+.mainService__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (min-width: 40rem) {
+    text-align: left;
+  }
+
+  div {
+    padding: 4rem 2rem;
+
+    @media (min-width: 40rem) {
+      padding: 4rem 2rem;
+      max-width: 32rem;
+      margin: auto;
+    }
+
+    a {
+      font: {
+        family: "Fraunces", serif;
+        weight: 900;
+        size: 1rem;
+      }
+      display: inline-block;
+      position: relative;
+      color: $blue-desaturated;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        z-index: -1;
+        transition: 0.3s;
+        transform: scale(1.1, 1);
+      }
+    }
+  }
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a.transform::after {
+  background-color: rgba($yellow, 0.3);
+}
+
+a.transform:hover::after {
+  background-color: rgba($yellow, 1);
+  transform: scale(1.2, 1);
+}
+
+a.stand-out::after {
+  background-color: rgba($red, 0.3);
+}
+
+a.stand-out:hover::after {
+  background-color: rgba($red, 1);
+  transform: scale(1.2, 1);
+}
