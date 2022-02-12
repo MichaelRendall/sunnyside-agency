@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import MainService from "./components/Services/MainService";
+import SubServices from "./components/Services/SubServices";
 import { MAIN_SERVICES } from "./lib/text";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             image={service.image}
           />
         ))}
+        <SubServices />
       </main>
     </div>
   );

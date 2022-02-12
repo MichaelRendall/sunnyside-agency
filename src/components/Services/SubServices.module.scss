@@ -1,0 +1,14 @@
+@import "../../styles/_variables.scss";
+
+.subServices {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+
+  & > * {
+    flex-basis: 100%;
+  }
+}

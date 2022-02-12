@@ -12,3 +12,18 @@ export const MAIN_SERVICES = [
     image: "stand-out",
   },
 ];
+
+export const SUB_SERVICES = [
+  {
+    id: 1,
+    header: "Graphic design",
+    body: "Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.",
+    class: "green",
+  },
+  {
+    id: 2,
+    header: "Photography",
+    body: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.",
+    class: "blue",
+  },
+];

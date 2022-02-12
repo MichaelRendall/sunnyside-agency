@@ -1,0 +1,41 @@
+@import "../../styles/_variables.scss";
+
+.subService {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+
+  span {
+    padding: 0 1.5rem 2rem;
+    position: absolute;
+    bottom: 0;
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin: 1rem auto;
+    }
+
+    @media (min-width: 40rem) {
+      max-width: 25rem;
+    }
+  }
+}
+
+.green {
+  h3,
+  p {
+    color: $cyan-desaturated;
+  }
+}
+
+.blue {
+  h3,
+  p {
+    color: $blue-desaturated;
+  }
+}
