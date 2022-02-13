@@ -1,0 +1,30 @@
+@import "../../styles/_variables.scss";
+
+.footer {
+  background-color: $green;
+  color: $cyan;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+svg:hover{
+	fill:red;
+}
+
+  img,
+  nav,
+  div {
+    margin: auto;
+  }
+
+  nav {
+    margin: 2rem 0 4rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}

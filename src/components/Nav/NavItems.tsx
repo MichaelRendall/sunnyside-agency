@@ -2,7 +2,11 @@ import React from "react";
 import NavItem from "./NavItem";
 import classes from "./NavItems.module.scss";
 
-const NavItems = () => {
+interface NavItemsProps {
+  hideContact?: boolean;
+}
+
+const NavItems: React.FC<NavItemsProps> = (props) => {
   const NAV_LIST = [
     {
       text: "About",
@@ -26,9 +30,14 @@ const NavItems = () => {
     },
   ];
 
+  let navItems = NAV_LIST;
+  if (props.hideContact) {
+    navItems = NAV_LIST.filter((navItem) => navItem.class !== "button");
+  }
+
   return (
     <ul className={classes.nav}>
-      {NAV_LIST.map((navItem) => (
+      {navItems.map((navItem) => (
         <NavItem
           key={navItem.text}
           text={navItem.text}

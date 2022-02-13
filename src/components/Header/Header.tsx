@@ -3,19 +3,15 @@ import classes from "./Header.module.scss";
 import logo from "../../assets/logo.svg";
 import hamburger from "../../assets/icon-hamburger.svg";
 import arrowDown from "../../assets/icon-arrow-down.svg";
-import NavItems from "./Nav/NavItems";
+import NavItems from "../Nav/NavItems";
 
 const Header = () => {
   return (
     <header className={classes.header}>
       <div className={classes.header__nav}>
         <img src={logo} alt="Sunnyside Logo" />
-        <img
-          className={classes.header__nav_mobile}
-          src={hamburger}
-          alt="Hamburger Icon"
-        />
-        <nav className={classes.header__nav_desktop}>
+        <img className="mobile" src={hamburger} alt="Hamburger Icon" />
+        <nav className="desktop">
           <NavItems />
         </nav>
       </div>
