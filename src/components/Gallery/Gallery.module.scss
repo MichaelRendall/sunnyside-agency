@@ -1,0 +1,14 @@
+@import "../../styles/_variables.scss";
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  @media (min-width: 40rem) {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}

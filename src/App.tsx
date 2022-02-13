@@ -1,3 +1,4 @@
+import Gallery from "./components/Gallery/Gallery";
 import Header from "./components/Header/Header";
 import MainService from "./components/Services/MainService";
 import SubServices from "./components/Services/SubServices";
@@ -19,6 +20,7 @@ function App() {
         ))}
         <SubServices />
         <Testimonials />
+        <Gallery />
       </main>
     </div>
   );
