@@ -12,6 +12,10 @@
   -webkit-transition: linear 150ms;
   -o-transition: linear 150ms;
   transition: linear 150ms;
+
+  @media (min-width: 40rem) {
+    display: none;
+  }
 }
 
 .popup__container {
