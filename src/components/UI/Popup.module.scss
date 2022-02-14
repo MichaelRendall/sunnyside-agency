@@ -1,10 +1,57 @@
 @import "../../styles/_variables.scss";
 
 .popup {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  z-index: 20;
+
+  transform-origin: 90% top;
+  -webkit-transition: linear 150ms;
+  -o-transition: linear 150ms;
+  transition: linear 150ms;
+}
+
+.popup__container {
   background: $white;
   width: 100%;
   margin: 0 1.5rem;
   padding: 3rem 2rem;
   color: $dark-blue-grey;
   font-size: 1.25rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 1.5rem;
+    background: linear-gradient(
+      to bottom right,
+      transparent 0%,
+      transparent 50%,
+      $white 50%,
+      $white 100%
+    );
+  }
+}
+
+.enter {
+  transform: scale(0, 0);
+}
+
+.enterActive {
+  transform: scale(1, 1);
+}
+
+.exit {
+  transform: scale(1, 1);
+}
+
+.exitActive {
+  transform: scale(0, 0);
 }

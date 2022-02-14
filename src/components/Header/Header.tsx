@@ -13,12 +13,15 @@ const Header = () => {
   return (
     <>
       {drawerShowing && <Backdrop clicked={() => setDrawerShowing(false)} />}
-      {drawerShowing && <Popup show={drawerShowing} />}
+      <Popup show={drawerShowing} />
 
       <header className={classes.header}>
         <div className={classes.header__nav}>
           <img src={logo} alt="Sunnyside Logo" />
-          <Hamburger className="mobile" onClick={() => setDrawerShowing(!drawerShowing)} />
+          <Hamburger
+            className="mobile"
+            onClick={() => setDrawerShowing(!drawerShowing)}
+          />
           <nav className="desktop">
             <NavItems />
           </nav>
