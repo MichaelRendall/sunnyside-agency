@@ -4,6 +4,7 @@ import classes from "./NavItems.module.scss";
 
 interface NavItemsProps {
   hideContact?: boolean;
+  popup?: boolean;
 }
 
 const NavItems: React.FC<NavItemsProps> = (props) => {
@@ -36,13 +37,14 @@ const NavItems: React.FC<NavItemsProps> = (props) => {
   }
 
   return (
-    <ul className={classes.nav}>
+    <ul className={`${classes.nav} ${props.popup ? classes.popup : ""}`}>
       {navItems.map((navItem) => (
         <NavItem
           key={navItem.text}
           text={navItem.text}
           link={navItem.link}
           class={navItem.class}
+          popup={props.popup}
         />
       ))}
     </ul>

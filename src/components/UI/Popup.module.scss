@@ -1,0 +1,10 @@
+@import "../../styles/_variables.scss";
+
+.popup {
+  background: $white;
+  width: 100%;
+  margin: 0 1.5rem;
+  padding: 3rem 2rem;
+  color: $dark-blue-grey;
+  font-size: 1.25rem;
+}

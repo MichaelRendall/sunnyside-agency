@@ -9,11 +9,24 @@
   background-color: $white;
   padding: 1rem 2rem;
   border-radius: 50px;
-  color: black;
+  color: $blue-desaturated;
   text-transform: uppercase;
 
   &:hover {
     background-color: rgba($white, 0.3);
     color: $white;
   }
+}
+
+.button.popup {
+  background-color: $yellow;
+
+  &:hover {
+    background-color: rgba($yellow, 0.3);
+    color: $blue-desaturated;
+  }
+}
+
+.popup:hover {
+  color: $blue-desaturated;
 }
