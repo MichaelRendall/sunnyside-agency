@@ -11,28 +11,30 @@ body {
   margin: 0;
 }
 
-h1 {
-  text: {
-    align: center;
-    transform: uppercase;
-  }
+/* TEXT STYLES */
+
+h1,
+h2,
+h3,
+h4,
+strong {
   font: {
     family: "Fraunces", serif;
     weight: 900;
-    size: 2.5rem;
   }
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
   color: $white;
   margin: 5rem 0 3rem;
   letter-spacing: 0.3rem;
 }
 
 h2 {
-  font: {
-    family: "Fraunces", serif;
-    weight: 900;
-    size: 2rem;
-  }
-  text-align: center;
+  font-size: 2rem;
   color: $blue-desaturated;
   margin: 0;
 
@@ -43,34 +45,34 @@ h2 {
 }
 
 h3 {
-  font: {
-    family: "Fraunces", serif;
-    weight: 900;
-    size: 1.75rem;
-  }
-  text-align: center;
+  font-size: 1.75rem;
   margin: 0;
 }
 
 h4 {
-  font: {
-    family: "Fraunces", serif;
-    weight: 900;
-    size: 1rem;
-  }
+  font-size: 1rem;
   color: $blue-grey2;
   letter-spacing: 0.3rem;
   margin: 0 0 4rem 0;
+}
+
+strong {
+  font-size: 1.25rem;
+  color: $blue-desaturated;
+}
+
+p,
+small,
+nav {
+  font: {
+    family: "Barlow", sans-serif;
+    weight: 400;
+  }
   text-align: center;
 }
 
 p {
-  font: {
-    family: "Barlow", sans-serif;
-    weight: 400;
-    size: 1.1rem;
-  }
-  text-align: center;
+  font-size: 1.1rem;
   color: $dark-blue-grey;
   line-height: 1.7;
   margin: 2rem auto;
@@ -80,21 +82,8 @@ p {
   }
 }
 
-strong {
-  font: {
-    family: "Fraunces", serif;
-    weight: 900;
-    size: 1.25rem;
-  }
-  color: $blue-desaturated;
-}
-
 small {
-  font: {
-    family: "Barlow", sans-serif;
-    weight: 400;
-    size: 0.9rem;
-  }
+  font-size: 0.9rem;
   color: $blue-grey2;
   margin-top: 0.8rem;
 }
@@ -108,9 +97,7 @@ a {
   }
 }
 
-nav {
-  font-family: "Barlow", sans-serif;
-}
+/* GENERIC CLASSES */
 
 .mobile {
   display: block;
