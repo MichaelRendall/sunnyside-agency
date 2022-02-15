@@ -11,6 +11,7 @@
   border-radius: 50px;
   color: $blue-desaturated;
   text-transform: uppercase;
+  transition: linear 0.2s;
 
   &:hover {
     background-color: rgba($white, 0.3);

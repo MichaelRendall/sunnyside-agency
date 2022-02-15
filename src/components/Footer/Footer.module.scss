@@ -8,9 +8,14 @@
   justify-content: center;
   flex-direction: column;
 
-svg:hover{
-	fill:red;
-}
+  svg {
+    fill: $cyan-desaturated;
+    transition: linear 0.2s;
+
+    &:hover {
+      fill: $white;
+    }
+  }
 
   img,
   nav,
