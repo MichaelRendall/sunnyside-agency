@@ -8,7 +8,7 @@ import Popup from "../UI/Popup";
 import Backdrop from "../UI/Backdrop";
 
 const Header = () => {
-  const [drawerShowing, setDrawerShowing] = useState(true);
+  const [drawerShowing, setDrawerShowing] = useState(false);
 
   return (
     <>
