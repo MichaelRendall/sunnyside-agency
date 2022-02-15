@@ -4,7 +4,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Links
 
-- Solution URL [can be found here](https://sunnyside-agency-omega.vercel.app/)
+- [Solution can be found here](https://sunnyside-agency-omega.vercel.app/)
 
 ### Built with
 
