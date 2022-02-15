@@ -4,13 +4,16 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Built with
 
-- [React](https://reactjs.org/) - JS library
+- React
 - TypeScript
-- SCSS Modules
+- SCSS (With CSS Modules)
 
 ### Screenshots
 
+#### Desktop
 ![](./screenshot-desktop.png)
+
+#### Mobile
 ![](./screenshot-mobile.png)
 
 ### To Run Code
